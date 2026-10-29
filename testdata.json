@@ -1,0 +1,73 @@
+[
+  {
+    "case": "valid sci-fi movie",
+    "title": "Interstellar",
+    "genre": "Sci-Fi",
+    "year": 2014,
+    "duration": 169,
+    "expectedStatus": 201
+  },
+  {
+    "case": "valid drama movie",
+    "title": "The Shawshank Redemption",
+    "genre": "Drama",
+    "year": 1994,
+    "duration": 142,
+    "expectedStatus": 201
+  },
+  {
+    "case": "valid short movie",
+    "title": "Tiny Tale",
+    "genre": "Animation",
+    "year": 2020,
+    "duration": 1,
+    "expectedStatus": 201
+  },
+  {
+    "case": "missing title",
+    "genre": "Drama",
+    "year": 2000,
+    "duration": 90,
+    "expectedStatus": 400
+  },
+  {
+    "case": "empty genre",
+    "title": "No Genre",
+    "genre": "",
+    "year": 2000,
+    "duration": 90,
+    "expectedStatus": 400
+  },
+  {
+    "case": "year before cinema existed",
+    "title": "Too Old",
+    "genre": "Drama",
+    "year": 1800,
+    "duration": 90,
+    "expectedStatus": 400
+  },
+  {
+    "case": "year is text",
+    "title": "Bad Year",
+    "genre": "Drama",
+    "year": "abc",
+    "duration": 90,
+    "expectedStatus": 400
+  },
+  {
+    "case": "zero duration",
+    "title": "Zero Length",
+    "genre": "Drama",
+    "year": 2000,
+    "duration": 0,
+    "expectedStatus": 400
+  },
+  {
+    "case": "duration is text",
+    "title": "Text Length",
+    "genre": "Drama",
+    "year": 2000,
+    "duration": "long",
+    "expectedStatus": 400
+  }
+]
